@@ -1,8 +1,13 @@
-<nav>
-    <div class="navbar">
+<nav class="navbar" [class.scrolled]="isScrolled">
+     <div class="menu-icon" (click)="toggleSidebar()">
+    <img *ngIf="!isSidebarOpen" src="list.svg" alt="menu" height="45" width="45"> 
+    <img *ngIf="isSidebarOpen" src="x.svg" alt="close" height="45" width="45"> 
+  </div>
+    <div class="navlist" [class.active]="isSidebarOpen">
         <a>Skills</a>
         <a>Work Experience</a>
         <a>Projects</a>
-        <a>Resume</a>
+        <a>Education</a>
+        <a href="Nishtha_Singh_Resume" download>Resume</a>
     </div>
 </nav>
