@@ -2,6 +2,7 @@
 html{
     margin:0;
     padding:0;
+    scroll-behavior: smooth;
 }
 .heading{
     color:#11117a;
@@ -23,12 +24,19 @@ html{
 .container{
     background-color: rgb(219, 219, 230);
     padding:15px;
-    margin: 5px 8%;
+    margin: 15px 8%;
     border:2px solid rgb(219, 219, 230);
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
  ul{
     color:grey;
     font-size: 1.1rem;
+}
+#skills,
+#education,
+#experience,
+#projects {
+  scroll-margin-top: 150px; 
 }

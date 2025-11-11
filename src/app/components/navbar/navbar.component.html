@@ -4,10 +4,10 @@
     <img *ngIf="isSidebarOpen" src="x.svg" alt="close" height="45" width="45"> 
   </div>
     <div class="navlist" [class.active]="isSidebarOpen">
-        <a>Skills</a>
-        <a>Work Experience</a>
-        <a>Projects</a>
-        <a>Education</a>
+        <a href="#skills" (click)="toggleSidebar()">Skills</a>
+        <a href="#exp" (click)="toggleSidebar()">Work Experience</a>
+        <a href="#project" (click)="toggleSidebar()">Projects</a>
+        <a href="#education" (click)="toggleSidebar()">Education</a>
         <a href="Nishtha_Singh_Resume" download>Resume</a>
     </div>
 </nav>

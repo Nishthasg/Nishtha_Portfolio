@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-
+  openPension(){
+    window.open('https://ifms.rajasthan.gov.in/#/home','_blank');
+  }
+  openFood(){
+   window.open('https://food-app-767c.onrender.com/', '_blank');
+  }
 }

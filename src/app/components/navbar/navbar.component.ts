@@ -1,4 +1,4 @@
-import { NgIf } from '@angular/common';
+import { NgIf, ViewportScroller } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 
 
@@ -11,6 +11,7 @@ import { Component, HostListener } from '@angular/core';
 export class NavbarComponent {
  isScrolled=false;
  isSidebarOpen = false;
+ constructor(private viewportScroller: ViewportScroller) {}
   @HostListener('window:scroll', [])
    onWindowScroll() {
     if (window.innerWidth > 768) {
@@ -22,4 +23,5 @@ export class NavbarComponent {
   toggleSidebar() {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
+  
 }
