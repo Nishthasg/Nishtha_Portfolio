@@ -1,7 +1,10 @@
-.skills{
-    background-color: rgb(219, 219, 230);
-    height:100vh;
-    h1{
-    color:#11117a;
+.icon-list{
+    display:grid;
+    grid-template-columns: repeat(6, auto);
+    margin-left:15px;
 }
+@media (max-width:520px){
+    .icon-list{
+        grid-template-columns: repeat(3, auto);
+    }
 }
